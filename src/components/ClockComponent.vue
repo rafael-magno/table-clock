@@ -60,7 +60,7 @@ const pixelLength = computed(() => {
     : Math.floor(appHeight / rows);
 });
 
-const nightMode = computed(() => hour.value > 18 || hour.value < 5);
+const nightMode = computed(() => hour.value > 18 || hour.value < 6);
 
 watch(minute, (value) => {
   let length = pixelLength.value;
